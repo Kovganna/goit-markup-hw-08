@@ -1,0 +1,38 @@
+.social-icons__item {
+    display: inline-flex;
+  }
+
+  .&:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .social-icons .social-icons__icon {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-icons__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $primary-white-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+    
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border: 50%;
+  }
+  
+  &:hover .social-icons__icon,
+  &:focus .social-icons__icon {
+    fill: $primary-white-color;
+  }

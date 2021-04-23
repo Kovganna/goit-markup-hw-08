@@ -1,0 +1,52 @@
+  .decision {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    max-width: 1600px;
+  }
+  
+  .hero-foto {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $bg-hero-second;
+  }
+  
+.hero-foto__titel {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    font-weight: 900;
+    margin-bottom: 30px;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    
+  .hero-foto__primary {
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 200px;
+    padding: 10px 32px;
+    border: none;
+  }
+  
+  .button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+  

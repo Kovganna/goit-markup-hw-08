@@ -1,0 +1,96 @@
+.checkbox__input {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+  &:checked + .checkbox__box {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    background-image: url(../img/vector.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-origin: border-box;
+  }
+  
+  .check-label {
+    margin-bottom: 30px;
+  }
+  
+  .checkbox__box {
+    display: inline-block;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 1.5px solid $title-text-color;
+    background-color: $primary-white-color;
+    border-radius: 2px;
+    margin-right: 9px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .checkbox__link {
+    color: $accent-color;
+    text-decoration: underline;
+    margin-left: 6px;
+  }
+  
+  form button {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    color: $primary-white-color;
+  }
+  
+  .checkbox__icon-x {
+    position: absolute;
+    left: 490px;
+    top: 8px;
+    border-radius: 50%;
+  
+    width: 30px;
+    height: 30px;
+  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: $primary-white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  
+  & .checkbox__icon-close {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,11 @@
+.decor-portfolio::after {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 4px;
+    position: absolute;
+    top: 77px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
+  

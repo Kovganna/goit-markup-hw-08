@@ -1,0 +1,51 @@
+.gallery {
+    padding-top: 83px;
+  }
+  
+  /* ability-list */
+  
+  .ability-list {
+    padding: 0;
+    margin: 0;
+  
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .ability-list__img:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .ability-list__label {
+    position: relative;
+  }
+  
+  .ability-list__item {
+    display: inline-flex;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    top: 224px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ability-list__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+
+.ability {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+  margin-bottom: 50px;
+  padding-top: 0;
+}
