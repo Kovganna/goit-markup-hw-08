@@ -88,7 +88,7 @@
     text-align: center;
   }
   
-  .quality__text:not(:last-child) {
+  .quality__text:not(last-child) {
     margin-bottom: 30px;
     padding: 0;
   }
