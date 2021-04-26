@@ -827,13 +827,4 @@ form {
 .main-nav__button:hover, .main-nav__button:focus {
   fill: #2196f3;
 }
-
-.main-nav__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 /*# sourceMappingURL=main.css.map */
