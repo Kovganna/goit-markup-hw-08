@@ -3,7 +3,7 @@ footer {
   }
   
   .footer-link {
-    padding-left: 39px;
+    padding-left: 0px;
     color: inherit;
     font-weight: 500;
     line-height: 1.14;
@@ -62,7 +62,7 @@ footer {
   } 
   
   .footer-list__mail {
-    width: 231px;
+    // width: 231px;
     margin-bottom: 9px;
   }
   
@@ -75,12 +75,14 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .footer-block .container {
+  .footer-block:not(:last-child) .container {
     padding-bottom: 60px;
     padding-top: 60px;
-    padding-left: 124px;
-    padding-right: 124px;
+    // padding-left: 124px;
+    // padding-right: 124px;
     display: block;
+    justify-content: center;
+    text-align: center;
   }
   
   .footer-tale {

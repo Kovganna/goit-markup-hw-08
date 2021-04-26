@@ -3,7 +3,7 @@
       align-items: center;
     }
     
-    & .current {
+    .site-nav .current {
       color: $accent-color;
       position: relative;
     }
@@ -25,12 +25,12 @@
       display: inline-flex;
     }
     
-    & + .site-nav__item {
+    .site-nav + .site-nav__item {
       margin-left: 50px;
     }
     
-    & a:hover,
-    & a:focus {
+    .site-nav a:hover,
+    .site-nav a:focus {
       color: $accent-color;
       fill: currentColor;
     }

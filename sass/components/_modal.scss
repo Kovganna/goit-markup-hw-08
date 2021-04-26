@@ -58,7 +58,7 @@
     /* outline: 1px solid purple; */
   }
   
-  &__field {
+  .modal-form__field {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -73,7 +73,7 @@
   }
   
   
-  &__field input {
+  .modal-form__field input {
     width: 438px;
     height: 40px;
     margin: 0;
@@ -82,14 +82,14 @@
     border-radius: 4px;
   }
   
-  & textarea::placeholder {
+  .modal-form textarea::placeholder {
     letter-spacing: 0.01em;
     /* padding-top: 12px;
     padding-left: 16px; */
     color: rgba(117, 117, 117, 0.5);
   }
   
-  & textarea {
+  .modal-form textarea {
     width: 438px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -98,7 +98,7 @@
     padding-left: 16px;
   }
   
-  & .comments {
+  .modal-form .comments {
     margin-bottom: 20px;
   }
   
@@ -136,13 +136,13 @@
   
   
   
-  &:focus + .modal-form__icon,
-  &:not(:placeholder-shown) + .modal-form__icon {
+  .modal-form__textarea:focus + .modal-form__icon,
+  .modal-form__textarea:not(:placeholder-shown) + .modal-form__icon {
     appearance: none;
   }
   
-  &:focus,
-  &:hover,
+  .modal-form__textarea:focus,
+  .modal-form__textarea:hover,
   .modal-form__input:focus,
   .modal-form__input:hover {
     border: 1px solid $accent-color;

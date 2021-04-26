@@ -40,6 +40,7 @@
   
   .footer-social {
     display: flex;
+    justify-content: center;
     margin-bottom: 60px;
   }
   
@@ -51,6 +52,6 @@
     text-transform: uppercase;
     color: $primary-white-color;
     margin-bottom: 30px;
-    margin-left: 39px;
+    
   }
   

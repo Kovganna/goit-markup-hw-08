@@ -20,9 +20,12 @@
     color: $primary-white-color;
   }
   
-  // .subscription-form__label {
-  //   display: flex;
-  // }
+  .subscription-form__label {
+    margin: 0;
+    padding: 0;
+
+   
+  }
   
   .subscription-form__email-type {
     padding-left: 15px;
