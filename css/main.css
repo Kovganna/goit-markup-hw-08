@@ -120,8 +120,29 @@ img {
   bottom: 10px;
   width: 40px;
   height: 40px;
+  border: none;
+  background-color: inherit;
 }
 
+.main-nav__button:hover, .main-nav__button:focus {
+  fill: #2196f3;
+}
+
+.main-nav__button-x {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+}
+
+.main-nav__button-x:hover, .main-nav__button-x:focus {
+  fill: #2196f3;
+}
+
+.main-nav__icon-x,
 .main-nav__icon {
   display: -webkit-box;
   display: -ms-flexbox;

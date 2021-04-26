@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
@@ -27,12 +27,19 @@
             <span class="main-nav__link-web">Web</span
             ><span class="main-nav__link-studio">Studio</span></a
           >
+          
           <button class="main-nav__button" type="button">
             <svg class="main-nav__icon" width="24" height="16">
               <use href="./img/icons.svg#icon-menu24px"></use>
             </svg>
           </button>
-          <!-- <ul class="site-nav">
+          <button class="main-nav__button-x" type="button">
+          <svg class="mai-nav__icon-x"  width="19" height="19">
+            <use href="./img/icons.svg#icon-close24px"></use>
+          </svg>
+        </button>
+        
+         <!-- <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link decor current">Студия</a>
             </li>
@@ -41,7 +48,6 @@
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>-->
-
         </nav>
         <!--<ul class="connection">
           <li class="connection__item">
@@ -66,8 +72,14 @@
     <main>
       <section class="section decision hero-foto">
         <div>
-          <h1 class="hero-foto__titel animation-traslate">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button hero-foto__primary" data-modal-open>
+          <h1 class="hero-foto__titel animation-traslate">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button
+            type="button"
+            class="button hero-foto__primary"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -79,8 +91,7 @@
         <div class="container">
           <ul class="quality">
             <li class="quality__punct">
-              <div class="quality__image-box sputnic">
-              </div>
+              <div class="quality__image-box sputnic"></div>
               <h3 class="quality__title">Внимание к деталям</h3>
               <p class="quality__text">
                 Идейные соображения, а также начало повседневной работы по
@@ -88,8 +99,7 @@
               </p>
             </li>
             <li class="quality__punct">
-              <div class="quality__image-box time">
-              </div>
+              <div class="quality__image-box time"></div>
               <h3 class="quality__title">Пунктуальность</h3>
               <p class="quality__text">
                 Задача организации, в особенности же рамки и место обучения
@@ -97,8 +107,7 @@
               </p>
             </li>
             <li class="quality__punct">
-              <div class="quality__image-box computer">
-              </div>
+              <div class="quality__image-box computer"></div>
               <h3 class="quality__title">Планирование</h3>
               <p class="quality__text">
                 Равным образом консультация с широким активом в значительной
@@ -106,8 +115,7 @@
               </p>
             </li>
             <li class="quality__punct">
-              <div class="quality__image-box astronaut">
-              </div>
+              <div class="quality__image-box astronaut"></div>
               <h3 class="quality__title">Современные технологии</h3>
               <p class="quality__text">
                 Значисмость этих проблем настолько очевидна, что реализация
@@ -169,8 +177,8 @@
           <ul class="teem-list">
             <li class="teem-list__member">
               <div>
-                <img 
-                 srcset="./img/igor.jpg 450w"
+                <img
+                  srcset="./img/igor.jpg 450w"
                   src="./img/igor.jpg"
                   alt="Игорь Демьяненько"
                 />
@@ -237,7 +245,7 @@
             <li class="teem-list__member">
               <div>
                 <img
-                srcset="./img/olga.jpg 450w"
+                  srcset="./img/olga.jpg 450w"
                   src="./img/olga.jpg"
                   alt="Ольга Репина"
                 />
@@ -305,7 +313,7 @@
             <li class="teem-list__member">
               <div>
                 <img
-                srcset="./img/kolya.jpg 450w"
+                  srcset="./img/kolya.jpg 450w"
                   src="./img/kolya.jpg"
                   alt="Николай Тарасов"
                 />
@@ -372,11 +380,10 @@
 
             <li class="teem-list__member">
               <img
-              srcset="./img/misha.jpg 450w"
-                  src="./img/misha.jpg"
-                  alt="Михаил Ермаков"
-                />
-             
+                srcset="./img/misha.jpg 450w"
+                src="./img/misha.jpg"
+                alt="Михаил Ермаков"
+              />
 
               <div class="teem-list__person">
                 <p class="teem-list__name">Михаил Ермаков</p>
@@ -503,7 +510,9 @@
             ><span class="footer-link__studio-link">Studio</span></a
           >
           <address class="footer-adress">
-            <a href="https://goo.gl/maps/t3vYdP8dUAn3NgiE9" class="footer-location"
+            <a
+              href="https://goo.gl/maps/t3vYdP8dUAn3NgiE9"
+              class="footer-location"
               >г. Киев, пр-т Леси Украинки, 26,</a
             >
             <ul class="footer-list">
@@ -514,7 +523,7 @@
               </li>
               <li>
                 <a href="tel:+380991111111" class="footer-list__tel"
-                  >+38 099 111 11 11</a 
+                  >+38 099 111 11 11</a
                 >
               </li>
             </ul>
@@ -657,7 +666,12 @@
           <div class="modal-form__field comments">
             <label>
               <span class="modal-form__name">Комментарий</span>
-              <textarea name="comment" rows="5" placeholder="Введите текст" class="modal-form__textarea"></textarea>
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Введите текст"
+                class="modal-form__textarea"
+              ></textarea>
             </label>
           </div>
 
