@@ -8,13 +8,19 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  max-height: 60px;
   align-content: center;
-}
 
-// .main-nav__nav {
-//   display: flex;
-// }
+    @media screen and (max-width: 480px) {
+    .main-nav {
+      max-height: 60px;
+      }
+    }
+  }
+ 
+
+.main-nav__nav {
+  display: flex;
+}
 
 .main-nav__link-web {
   font-family: "Raleway", sans-serif;
@@ -40,8 +46,13 @@
   color: $title-text-color;
   display: inline-block;
   padding: 24px 0;
-  margin-right: 94px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+  }
+  
 }
-
-
-
