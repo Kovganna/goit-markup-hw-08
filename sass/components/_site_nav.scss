@@ -1,12 +1,14 @@
 .site-nav {
     display: flex;
     align-items: center;
+
+    
+    & .current {
+      color: $accent-color;
+      position: relative;
+  }
   }
   
-  & .current {
-    color: $accent-color;
-    position: relative;
-  }
   
   // .site-nav__link {
   //   padding-left: 0;
@@ -26,17 +28,19 @@
   .site-nav__item {
     align-items: center;
     display: inline-flex;
+
+    & + .site-nav__item {
+      margin-left: 50px;
+    }
+    
+    & a:hover,
+    & a:focus{
+      color: $accent-color;
+      fill: currentColor;
+    }
   }
   
-  & + .site-nav__item {
-    margin-left: 50px;
-  }
-  
-  & a:hover,
-  & a:focus{
-    color: $accent-color;
-    fill: currentColor;
-  }
+ 
   
   .decor::after {
     display: block;

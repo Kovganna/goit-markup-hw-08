@@ -55,10 +55,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+
+    & > .subscription-form__icon {
+      margin-left: 10px;
+      fill: $primary-white-color;
+    }
   }
   
-  & > .subscription-form__icon {
-    margin-left: 10px;
-    fill: $primary-white-color;
-  }
   

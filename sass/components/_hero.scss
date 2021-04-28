@@ -16,19 +16,37 @@
     background-position: center;
     background-size: cover;
     background-color: $bg-hero-second;
+
   }
   
 .hero-foto__titel {
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-white-color;
     font-weight: 900;
     margin-bottom: 30px;
-    max-width: 696px;
+    
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+      font-size: 26px;
+      line-height: 1.62;
+      max-width: 360px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.62;
+      max-width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
+
   }
 
     

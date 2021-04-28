@@ -13,50 +13,115 @@
     padding-bottom: 0px;
   }
 
-  .quality {
-    padding: 0;
-    margin: 0;
-  
-    display: flex;
-    flex-wrap: wrap;
-  
-    margin-right: -30px;
+  @media screen and (min-width: 480px) {
+    
+    .quality {
+      padding: 0;
+      margin: 0;
+          
+    }
+
+    .quality__image-box {
+      margin-bottom: 30px;
+      width: 354px;
+      height: 120px;
+      background-color: $icon-bg-color;
+      border-radius: 4px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    
+    .quality {
+      padding: 0;
+      margin: 0;
+    
+      display: flex;
+      flex-wrap: wrap;
+    
+      margin-right: -30px;
 
      
-    & > .quality__punct {
-      flex-basis: calc(100% / 4 - 30px);
-      margin-right: 30px;
+      & > .quality__punct {
+        flex-basis: calc((100% - 3 * 30px)/2);
+        margin-right: 30px;
+      }
+    }
+
+    .quality__image-box {
+      margin-bottom: 30px;
+      width: 354px;
+      height: 120px;
+      background-color: $icon-bg-color;
+      border-radius: 4px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+    .quality {
+      padding: 0;
+      margin: 0;
+    
+      display: flex;
+      flex-wrap: wrap;
+    
+      margin-right: -30px;
+
+     
+      & > .quality__punct {
+        flex-basis: calc(100% / 4 - 30px);
+        margin-right: 30px;
+      }
+    }
+
+    .quality__image-box {
+      margin-bottom: 30px;
+      width: 270px;
+      height: 120px;
+      background-color: $icon-bg-color;
+      border-radius: 4px;
     }
   }
  
   
+  
   .quality__image-box {
     margin-bottom: 30px;
-    width: 270px;
+    width: 354px;
     height: 120px;
     background-color: $icon-bg-color;
     border-radius: 4px;
   }
   
-  @each $label in astronaut, computer, time, sputnic {
-    #{$label}-icon {
-    background-repeat: no-repeat;
-    background-position: center;}
-  }
+  // @each label in astronaut, computer, time, sputnic {
+  //   #{label}-icon {
+  //   background-repeat: no-repeat;
+  //   background-position: center;}
+  // }
   
   .sputnic {
     background-image: url(../img/sputnic.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .time {
     background-image: url(../img/time.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .computer {
     background-image: url(../img/computer.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .astronaut {
     background-image: url(../img/astronaut.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .quality__title {
