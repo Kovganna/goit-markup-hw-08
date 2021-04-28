@@ -5,17 +5,33 @@ footer {
   .footer-link__link-web {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     color: $accent-color;
+
+    @media screen and (min-width: 480px) {
+      font-size: 24px;
+      line-height: 1.16;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 
   .footer-link__studio-link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     color: $primary-white-color;
+
+    @media screen and (min-width: 480px) {
+      font-size: 24px;
+      line-height: 1.16;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
   
   .container-adress {
@@ -81,6 +97,15 @@ footer {
     color: $title-text-color;
     margin-bottom: 20px;
     display: inline-block;
+
+    @media screen and (min-width: 480px) {
+      line-height: 1.71;
+    }
+
+    @media screen and (min-width: 1200px) {
+      
+      line-height: 1.14;
+    }
   }
   
   
