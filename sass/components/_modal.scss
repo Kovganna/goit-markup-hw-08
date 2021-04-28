@@ -131,15 +131,13 @@
   
   .modal-form__textarea {
     resize: none;
+
+    &:focus + .modal-form__icon,
+    &:not(:placeholder-shown) + .modal-form__icon {
+      appearance: none;
   }
-  
-  
-  
-  
-  .modal-form__textarea:focus + .modal-form__icon,
-  .modal-form__textarea:not(:placeholder-shown) + .modal-form__icon {
-    appearance: none;
   }
+    
   
   .modal-form__textarea:focus,
   .modal-form__textarea:hover,

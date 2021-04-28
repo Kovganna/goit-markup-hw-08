@@ -7,18 +7,20 @@
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
+
+    &:checked + .checkbox__box {
+      background-color: $accent-color;
+      border-color: $accent-color;
+      background-image: url(../img/vector.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+      background-origin: border-box;
+    }
+    
   }
 
-  &:checked + .checkbox__box {
-    background-color: $accent-color;
-    border-color: $accent-color;
-    background-image: url(../img/vector.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    background-origin: border-box;
-  }
-  
+ 
   .check-label {
     margin-bottom: 30px;
   }
@@ -80,8 +82,8 @@
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
+
+     
   &:hover,
   &:focus {
     fill: $accent-color;
@@ -94,3 +96,5 @@
     cursor: pointer;
   }
   
+  }
+ 

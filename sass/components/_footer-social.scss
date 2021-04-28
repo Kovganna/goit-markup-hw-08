@@ -16,20 +16,22 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+  
     &:hover,
     &:focus {
-    background-color: $accent-color;
-    border: 50%;
-  }
-  
+      background-color: $accent-color;
+      border: 50%;
+    }
+    
     &:hover .footer-social__icon,
     &:focus .footer-social__icon {
       fill: $primary-white-color;
-  }
+    }
+    
   }
 
-   
+ 
+  
   .footer-social__item:not(:last-child) {
     margin-right: 10px;
   }
@@ -40,8 +42,6 @@
   
   .footer-social {
     display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
   }
   
   .footer-titel {
@@ -52,6 +52,5 @@
     text-transform: uppercase;
     color: $primary-white-color;
     margin-bottom: 30px;
-    
   }
   

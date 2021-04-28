@@ -2,17 +2,6 @@ footer {
     background-color: $hero-bg-color;
   }
   
-  .footer-link {
-    padding-left: 0px;
-    color: inherit;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $title-text-color;
-    margin-bottom: 20px;
-    display: inline-block;
-  }
-  
   .footer-link__link-web {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -32,7 +21,7 @@ footer {
   .container-adress {
     margin: 0;
     padding: 0;
-    // margin-right: 70px;
+    margin-right: 70px;
   }
   
   .footer-location {
@@ -48,25 +37,23 @@ footer {
   /* footer-list */
   
   .footer-list {
-    // padding-left: 0;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 60px;
+    padding-left: 0;
+
+    & a:hover,
+    & a:focus {
+      color: $accent-color;
+      fill: currentColor;
+  } 
   }
 
-  .footer-list a:hover,
-  .footer-list a:focus {
-    color: $accent-color;
-    fill: currentColor;
-  } 
+  
   
   .footer-list__mail {
-    // width: 231px;
+    width: 231px;
     margin-bottom: 9px;
   }
   
-  .footer-list__mail,
+  &,
   .footer-list__tel {
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
@@ -75,25 +62,29 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .footer-block:not(:last-child) .container {
+  .footer-block .container {
     padding-bottom: 60px;
     padding-top: 60px;
-    // padding-left: 124px;
-    // padding-right: 124px;
-    display: block;
-    justify-content: center;
-    text-align: center;
+    display: flex;
   }
   
   .footer-tale {
-    // padding-top: 12px;
-    // margin-right: 93px;
-    padding: 0;
-    margin: 0;
-    
+    padding-top: 12px;
+    margin-right: 93px;
   }
   
-   
+  .footer-link {
+    color: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  
+  
   .footer-adress :hover,
   .footer-adress :focus,
   .footer-link a:hover,

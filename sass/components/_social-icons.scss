@@ -2,7 +2,7 @@
     display: inline-flex;
   }
 
-  .social-icons__item:not(:last-child) {
+  .&:not(:last-child) {
     margin-right: 10px;
   }
 
@@ -26,13 +26,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
     
-  .social-icons__link:hover,
-  .social-icons__link:focus {
+  &:hover,
+  &:focus {
     background-color: $accent-color;
     border: 50%;
   }
   
-  .social-icons__link:hover .social-icons__icon,
-  .social-icons__link:focus .social-icons__icon {
+  &:hover .social-icons__icon,
+  &:focus .social-icons__icon {
     fill: $primary-white-color;
   }

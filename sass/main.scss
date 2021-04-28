@@ -1,33 +1,23 @@
-
-// @import './components/connection';
-
-
-
-// @import './components/subscription';
-// @import './components/modal';
-// @import './components/checkbox';
-
-// // Portfolio
-
-// @import './components/p-header';
-// @import './components/portfolio-list';
-// @import './components/portfolio-gallery';
-
 @import './utils/variables';
 @import './utils/base';
 @import './components/header';
-@import './components/mobile-btn';
-// // @import './components/site_nav';
-// // @import './components/connection';
+@import './components/site_nav';
+@import './components/connection';
 @import './components/hero';
 @import './components/quality';
 @import './components/ability';
-// @import './components/comunity';
-// @import './components/teem-list';
-// @import './components/social-icons';
-// @import './components/clients';
-// @import './components/footer';
-// @import './components/footer-social';
-// @import './components/subscription';
-// @import './components/modal';
+@import './components/comunity';
+@import './components/teem-list';
+@import './components/social-icons';
+@import './components/clients';
+@import './components/footer';
+@import './components/footer-social';
+@import './components/subscription';
+@import './components/modal';
+@import './components/checkbox';
 
+// Portfolio
+
+@import './components/p-header';
+@import './components/portfolio-list';
+@import './components/portfolio-gallery';

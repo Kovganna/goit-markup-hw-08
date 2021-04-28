@@ -1,29 +1,27 @@
-@media screen and (max-width: 768px) {
-    .connection {
-        display: inline-block;
-        margin-left: auto;
-        align-items: flex-end;
-        padding-left: 84px;
+.connection {
+    display: inline-flex;
+    margin-left: auto;
+    align-items: center;
 
-        &:hover .connection__icon-mail,
-        &:focus .connection__icon-mail,
-        &:hover .connection__icon-tel,
-        &:focus .connection__icon-tel,
-        .connection__item a:hover,
-        .connection__item a:focus {
-            color: $accent-color;
-            fill: currentColor;
-        }
-
-        
-    }
-  
-        .connection__item {
+    &:hover .connection__icon-mail,
+    &:focus .connection__icon-mail,
+    &:hover .connection__icon-tel,
+    &:focus .connection__icon-tel {
+    color: $accent-color;
+    fill: currentColor;
+  }
+  }
+   
+  .connection__item {
     align-items: center;
     display: inline-flex;
-    }   
-   
-   
+
+    & a:hover,
+    & a:focus {
+      color: $accent-color;
+      fill: currentColor;
+    }
+  }   
 
   .connection__mail,
   .connection__tel {
@@ -45,7 +43,7 @@
   }
   
   .connection__icon-tel {
-    // margin-left: 30px;
+    margin-left: 30px;
     margin-right: 10px;
     fill: $icon-color-header;
     justify-content: center;
@@ -53,23 +51,3 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-}  
-
-@media screen and (max-width: 480px) {
-    .connection {
-        display: none;
-    }
-}    
-
-
-@media screen and (max-width: 768px) {
-    .connection__icon-tel {
-        margin-left: 0;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .connection__icon-tel {
-    margin-left: 30px;
-    }
-}

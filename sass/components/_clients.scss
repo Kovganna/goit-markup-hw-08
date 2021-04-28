@@ -21,14 +21,15 @@
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-  }
-
-  
-  .clients-list > .clients-list__item {
-    flex-basis: calc(100% - 3*30px)/2;
+    
+  & > .clients-list__item {
+    flex-basis: calc(100% / 6-30px);
     margin-top: 30px;
     margin-left: 30px;
   }
+  }
+
+  
   
   
   .clients-list__thumb {
@@ -37,8 +38,8 @@
     align-items: center;
     border: 1px solid $icon-color;
     border-radius: 4px;
-    height: 92px;
-    width: 210px;
+    height: 90px;
+    width: 170px;
     color: $icon-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

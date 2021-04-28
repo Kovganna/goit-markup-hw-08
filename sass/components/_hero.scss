@@ -1,18 +1,12 @@
   .decision {
     margin: auto;
     text-align: center;
-    padding-bottom: 118px;
-    padding-top: 118px;
-
-    @media screen and (min-width:1200px){
     padding-bottom: 200px;
     padding-top: 200px;
-    }
-
+    max-width: 1600px;
   }
   
   .hero-foto {
-    
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -22,45 +16,23 @@
     background-position: center;
     background-size: cover;
     background-color: $bg-hero-second;
-
-    @media screen and (min-width: 480px) {
-      width: 480px;
-      height: 400px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      height: 400px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      min-width: 1200px;
-      height: 600px;
-    }
-
-
   }
   
 .hero-foto__titel {
-    font-size: 26px;
-    line-height: 1.62;
+    font-size: 44px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-white-color;
     font-weight: 900;
     margin-bottom: 30px;
-    max-width: 360px;
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-      max-width: 696px
-    }
   }
 
-    .hero-foto__primary {
+    
+  .hero-foto__primary {
     display: inline-block;
     border-radius: 4px;
     min-width: 200px;
@@ -77,5 +49,4 @@
     background-color: $accent-color;
     cursor: pointer;
   }
-  
   
