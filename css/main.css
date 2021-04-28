@@ -410,22 +410,22 @@ img {
 
 @media screen and (min-width: 480px) {
   .quality__image-box {
-    max-width: 450px;
-    max-height: 120px;
+    width: 450px;
+    height: 120px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .quality__image-box {
-    max-width: 354px;
-    max-height: 120px;
+    width: 354px;
+    height: 120px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .quality__image-box {
-    max-width: 270px;
-    max-height: 120px;
+    width: 270px;
+    height: 120px;
   }
 }
 

@@ -57,19 +57,19 @@
     border-radius: 4px;
 
     @media screen and (min-width: 480px) {
-      max-width: 450px;
-      max-height: 120px;
+      width: 450px;
+      height: 120px;
     }
 
 
     @media screen and (min-width: 768px) {
-      max-width: 354px;
-      max-height: 120px;
+      width: 354px;
+      height: 120px;
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 270px;
-      max-height: 120px;
+      width: 270px;
+      height: 120px;
     }
   }
    
@@ -78,7 +78,6 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
   .time {
     background-image: url(../img/time.png);
     background-repeat: no-repeat;
