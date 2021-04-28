@@ -29,7 +29,7 @@
 
      
       & > .quality__punct {
-        flex-basis: calc((100% - 3 * 30px)/2);
+        width: calc((100% - 2 * 30px)/2);
         margin-right: 30px;
       }
     }  
