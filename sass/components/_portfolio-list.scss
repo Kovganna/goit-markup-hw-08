@@ -5,12 +5,12 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
        justify-content: flex-start;
        padding-right: -8px;
 
-      & > .portfolio-list__portfolio-button {
-        flex-basis: calc(100%- 4*8px)/3 ;
+       & > .portfolio-list__portfolio-button {
+        flex-basis: calc(100% - 2 * 8px)/3 - 8px ;
         padding-right: 8px;
       }  
     }
@@ -48,11 +48,12 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
-  
-
-  
-  
+   
   .portfolio-gallery__text {
     font-size: 16px;
     line-height: 1.88;
   }
+  
+
+  
+ 
