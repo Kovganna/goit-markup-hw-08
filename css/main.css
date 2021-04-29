@@ -583,6 +583,12 @@ img {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .teem {
+    margin-top: 60px;
+  }
+}
+
 .teem-list {
   padding: 0;
   margin: 0;
@@ -1431,6 +1437,22 @@ form button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-right: -8px;
+  }
+  .portfolio-list > .portfolio-list__portfolio-button {
+    -ms-flex-preferred-size: calc(100%- 4*8px)/3;
+        flex-basis: calc(100%- 4*8px)/3;
+    padding-right: 8px;
+  }
 }
 
 .portfolio-list__portfolio-button:not(:last-child) {

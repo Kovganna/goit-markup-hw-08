@@ -7,7 +7,7 @@
 
   @media screen and (min-width: 480px) {
     font-size: 28px;
-    line-height: 1.18;    
+    line-height: 1.18; 
   }
 
   @media screen and (min-width: 1200px) {
@@ -18,5 +18,9 @@
 
 .teem {
   background-color: $secondary-bg-color;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
   
 }

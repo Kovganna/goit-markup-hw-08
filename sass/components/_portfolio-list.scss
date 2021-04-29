@@ -3,10 +3,24 @@
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+       justify-content: flex-start;
+       padding-right: -8px;
+
+      & > .portfolio-list__portfolio-button {
+        flex-basis: calc(100%- 4*8px)/3 ;
+        padding-right: 8px;
+      }  
+    }
   }
+
+  
   
   .portfolio-list__portfolio-button:not(:last-child) {
     padding-right: 8px;
+    
   }
 
   .secondary {
