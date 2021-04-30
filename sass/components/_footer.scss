@@ -37,7 +37,23 @@ footer {
   .container-adress {
     margin: 0;
     padding: 0;
-    margin-right: 70px;
+
+    @media screen and (min-width: 480px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-left: 61px;
+      text-align: center;
+      margin-right: 165px;
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+    
   }
   
   .footer-location {
@@ -53,7 +69,11 @@ footer {
   /* footer-list */
   
   .footer-list {
-    padding-left: 0;
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 0;
+    }
+    
 
     & a:hover,
     & a:focus {
@@ -65,8 +85,11 @@ footer {
   
   
   .footer-list__mail {
-    width: 231px;
-    margin-bottom: 9px;
+    @media screen and (min-width: 1200px) {
+      width: 231px;
+      margin-bottom: 9px;
+    }
+    
   }
   
   .footer-list__mail,
@@ -81,12 +104,32 @@ footer {
   .footer-block .container {
     padding-bottom: 60px;
     padding-top: 60px;
-    display: flex;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
   }
+    }
+    
   
   .footer-tale {
-    padding-top: 12px;
-    margin-right: 93px;
+
+    @media screen and (min-width: 480px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 5px;
+      padding-right: 74px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 12px;
+      margin-right: 93px;
+    }
+    
   }
   
   .footer-link {
@@ -119,3 +162,5 @@ footer {
     color: $accent-color;
     fill: currentColor;
   } 
+
+  
