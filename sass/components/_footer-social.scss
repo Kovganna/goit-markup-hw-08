@@ -43,9 +43,11 @@
   .footer-social {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       justify-content: center;
     }
+
+    
   }
   
   .footer-titel {
