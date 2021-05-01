@@ -56,15 +56,15 @@
         </ul>
 
         <div class="menu__button">
-          <button type="button" class="menu__btn">
+          <button type="button" class="menu__btn" data-menu-button>
             <svg class="menu__icon" width="40" height="40">
-              <use href="./img/icons.svg#icon-menu40px"></use>
-              <use href="./img/icons.svg#icon-close40px"></use>
+              <use class="icon-open" href="./img/icons.svg#icon-menu40px"></use>
+              <use class="icon-close" href="./img/icons.svg#icon-close40px"></use>
             </svg>
           </button>
         </div>
 
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
           <ul class="mobile-menu__nav">
             <li class="mobile-menu__item">
               <a href="./index.html" class="mobile-menu__link current">Студия</a>
@@ -742,6 +742,7 @@
               });
           })();
         </script>
+        <script src="./js/mobile-menu.js"></script>
       </div>
     </div>
   </body>

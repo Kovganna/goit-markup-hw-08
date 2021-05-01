@@ -320,6 +320,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: 105;
   }
 }
 
@@ -337,23 +338,46 @@ img {
             transition-duration: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #212121;
   }
   .menu__btn:focus, .menu__btn:hover {
     fill: #2196f3;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .icon-close {
+    display: none;
+  }
+}
+
+.is-open .icon-close {
+  display: block;
+}
+
+.is-open .icon-open {
+  display: none;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 100%;
     width: 480px;
     height: 796px;
     background-color: #fff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    z-index: 1;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .mobile-menu.is-open {
+    top: 0%;
   }
 }
 
@@ -1983,20 +2007,44 @@ form button {
 }
 
 .portfolio-list {
+  margin: 0;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.portfolio-list__portfolio-button:nth-child(-n+3) {
-  margin-bottom: 15px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio-list__portfolio-button:not(:last-child) {
-  margin-right: 8px;
+  padding-right: 8px;
+}
+
+.secondary {
+  padding: 6px 22px;
 }
 
 .portfolio-list__button {
@@ -2021,8 +2069,9 @@ form button {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.secondary {
-  padding: 6px 22px;
+.portfolio-gallery__text {
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .grid {
@@ -2030,8 +2079,58 @@ form button {
   padding: 0;
 }
 
-.grid__foto {
-  width: 100%;
+@media screen and (min-width: 480px) {
+  .grid {
+    display: inline-block;
+    margin-bottom: -30px;
+  }
+  .grid > .grid__img {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+  .grid > .grid__img {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+  .grid > .grid__img {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3 - 30px);
+        flex-basis: calc((100% - 3 * 30px) / 3 - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid__foto {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .grid__img {
@@ -2089,6 +2188,12 @@ form button {
   position: relative;
   padding: 20px 24px;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet {
+    padding-bottom: 56px;
+  }
 }
 
 .grid__magic-text {

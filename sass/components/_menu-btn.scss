@@ -9,6 +9,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        z-index: 105;
     }
 
     @media screen and (min-width: 768px) {
@@ -22,10 +23,29 @@
         border: none;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: $title-text-color;
 
         &:focus,
         &:hover {
             fill: $accent-color;
+            transition-duration: 250ms;
         }
     }
 }
+
+.icon-close {
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
+      display: none;  
+    }
+}
+
+.is-open {
+    .icon-close {
+        display: block;
+        
+    }
+    .icon-open {
+        display: none;
+    }
+}
+
