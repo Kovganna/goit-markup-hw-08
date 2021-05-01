@@ -1,12 +1,13 @@
 .mobile-menu {
     @media screen and (min-width: 480px) and (max-width: 767px) {
-        width: 480px;
-        height: 796px;
-        
         position: fixed;
         left: 0;
-        top: 0;
-        background-color: $primary-text-color;
+        top: 0;        
+        width: 480px;
+        height: 796px;
+                
+        background-color: $primary-white-color;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
         z-index: 1;
 
     }
@@ -20,3 +21,104 @@
     }
 }
 
+.mobile-menu__nav {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        padding: 0;
+        margin: 0;
+
+        padding-top: 48px;
+        padding-left: 40px;
+
+        margin-bottom: 302px;
+    }
+}
+
+.mobile-menu__link {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        // text-align: center;
+        letter-spacing: 0.02em;
+        color: $title-text-color;
+
+    }
+}
+
+
+
+.mobile-menu__item {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+
+        }
+        
+        & .current {
+            color: $accent-color;
+        }
+    }
+}
+
+.connection-menu {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-left: 40px;
+    margin-bottom: 64px;
+    }
+    
+}
+
+.connection-menu__item {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+
+        }
+        
+        
+    }
+}
+
+.connection-menu__tel {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        color: $accent-color;
+    }
+}
+
+.connection-menu__mail {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17x;
+        color: $primary-text-color;
+      
+    }
+}
+
+.social-menu {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: flex;
+        padding-left: 40px;
+        padding-bottom: 48px;
+    }
+}
+
+.social-menu__item {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        &:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+        }
+    }
+}
+
+.social-menu__link {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        color: $accent-color;
+       
+    }
+}
