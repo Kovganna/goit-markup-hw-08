@@ -1,11 +1,17 @@
 .head {
   border-bottom: 1px solid $header-border-color;
   background-color: $primary-white-color;
+
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    height: 60px;
+    position: relative;
+  }
 }
 
 .main-nav__nav {
@@ -15,9 +21,23 @@
 .main-nav__link-web {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: $accent-color;
+
+  @media screen and (min-width: 480px)  {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px)  {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .main-nav__link-studio {
@@ -49,6 +69,16 @@
   letter-spacing: 0.02em;
   color: $title-text-color;
   display: inline-block;
-  padding: 24px 0;
-  margin-right: 94px;
+  
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+    padding: 24px 0;
+  }
+  
 }
