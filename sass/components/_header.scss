@@ -12,12 +12,14 @@
   @media screen and (max-width: 767px) {
     height: 60px;
     position: relative;
+    
   }
 }
 
 .main-nav__nav {
-  display: flex;
-}
+   display: flex;
+   
+ }
 
 .main-nav__link-web {
   font-family: "Raleway", sans-serif;
@@ -70,6 +72,7 @@
   letter-spacing: 0.02em;
   color: $title-text-color;
   display: inline-block;
+
   
 
   @media screen and (min-width: 768px) {

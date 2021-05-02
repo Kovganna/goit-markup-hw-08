@@ -15,7 +15,7 @@
     display: flex;
     flex-wrap: nowrap;
 
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
       display: none;
     }
   }
@@ -57,7 +57,7 @@
   margin-bottom: 50px;
   padding-top: 0;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }  
 
