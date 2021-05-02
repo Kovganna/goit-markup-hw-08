@@ -1,4 +1,5 @@
 .backdrop {
+  @media screen and (min-width: 480px) {
     position: fixed;
     top: 0%;
     left: 0%;
@@ -8,6 +9,32 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(0, 0, 0, 0.1);
     /* z-index: 1; */
+  }
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(0, 0, 0, 0.1);
+    /* z-index: 1; */
+  }
+
+    @media screen and (min-width: 1200px) {
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: rgba(0, 0, 0, 0.1);
+      /* z-index: 1; */
+    }
+   
   }
   
   .backdrop.is-hidden {
@@ -26,73 +53,123 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+      /* padding: 15px; */
+    background-color: $primary-white-color;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
-    // @media screen and (min-width: 768px) {
-    //   max-width: 450px;
-    //   max-height: 609px;
-    //   /* padding: 15px; */
-    // }
+    @media screen and (min-width: 480px) {
+      min-width: 450px;
+      min-height: 609px;
+    }
+
+    @media screen and (min-width: 768px) {
+      min-width: 450px;
+      min-height: 609px;
+    }
 
     @media screen and (min-width: 1200px) {
       min-width: 528px;
       min-height: 581px;
-      /* padding: 15px; */
     }
-   
-  
-    background-color: $primary-white-color;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
   }
   
   .modal-titel {
     font-weight: 700;
-    font-size: 20px;
+    // font-size: 20px;
     
     text-align: center;
     color: $title-text-color;
+    margin-right: 0;
     margin-bottom: 12px;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-left: 55px;
+    padding-right: 55px;
+    // line-height: 1.115;
 
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //   line-height: 1.5;
-    //   width: 370px;
-      
-    // }
-    
+    @media screen and (min-width: 480px) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
+      font-size: 20px;
+      line-height: 1.5;
+    }
 
     @media screen and (min-width: 1200px) {
+      font-size: 20px;
       line-height: 1.115;
-      width: 581px;
+    
     }
-   
+    
   }
   
   /* modal */
   
   .modal-form {
 
-    // @media screen and (min-width: 768px) {
-    //   width: 100%;
-    //   height: 100%;
-    //   padding-left: 41px;
-    //   padding-bottom: 40px;
-    //   padding-right: 39px;
-    // }
-
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 480px) {
       width: 100%;
       height: 100%;
       padding-left: 40px;
       padding-bottom: 40px;
       padding-right: 40px;
-    }
-   
-  
+      /* outline: 1px solid purple; */
+      }
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      height: 100%;
+      padding-left: 40px;
+      padding-bottom: 40px;
+      padding-right: 40px;
+      /* outline: 1px solid purple; */
+      }
+
+    @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
     /* outline: 1px solid purple; */
+    }
   }
   
   .modal-form__field {
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $icon-color-header;
+      border: none;
+    
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      cursor: pointer;
+      }
+
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $icon-color-header;
+      border: none;
+    
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      cursor: pointer;
+      }
+
+    @media screen and (min-width: 1200px) {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -104,16 +181,29 @@
     flex-direction: column;
     margin-bottom: 10px;
     cursor: pointer;
+    }
   }
   
   
   .modal-form__field input {
-    width: 438px;
     height: 40px;
     margin: 0;
     padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    
+    @media screen and (min-width: 480px) {
+      width: 370px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 438px;
+    }
   }
   
   .modal-form textarea::placeholder {
@@ -121,15 +211,29 @@
     /* padding-top: 12px;
     padding-left: 16px; */
     color: rgba(117, 117, 117, 0.5);
+    
   }
   
   .modal-form textarea {
-    width: 438px;
-    height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-top: 12px;
     padding-left: 16px;
+
+    @media screen and (min-width: 480px) {
+      width: 370px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 370px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 438px;
+    height: 120px;
+    }
   }
   
   .modal-form .comments {
@@ -158,6 +262,7 @@
     height: 18px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    
   }
   
   
