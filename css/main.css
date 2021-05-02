@@ -2221,15 +2221,52 @@ form button {
   }
 }
 
-.decor-portfolio::after {
-  display: block;
-  content: "";
-  width: 78px;
-  height: 4px;
-  position: absolute;
-  top: 77px;
-  border-radius: 2px;
-  background-color: currentColor;
+@media screen and (min-width: 768px) {
+  .decor-portfolio::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .decor-portfolio::after {
+    display: block;
+    content: "";
+    width: 75px;
+    height: 4px;
+    position: absolute;
+    top: 48px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .decor-portfolio::after {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 4px;
+    position: absolute;
+    top: 77px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section.portfolio {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.portfolio {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .portfolio-list {

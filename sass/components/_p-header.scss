@@ -1,4 +1,23 @@
 .decor-portfolio::after {
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  
+
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    content: "";
+    width: 75px;
+    height: 4px;
+    position: absolute;
+    top: 48px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
+  
+  @media screen and (min-width: 1200px) {
     display: block;
     content: "";
     width: 78px;
@@ -8,4 +27,6 @@
     border-radius: 2px;
     background-color: currentColor;
   }
+}
+    
   
