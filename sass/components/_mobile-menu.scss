@@ -1,5 +1,5 @@
 .mobile-menu {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         position: fixed;
         left: 0;
         top: 100%;        
@@ -29,7 +29,7 @@
 }
 
 .mobile-menu__nav {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         padding: 0;
         margin: 0;
 
@@ -41,7 +41,7 @@
 }
 
 .mobile-menu__link {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         font-weight: 500;
         font-size: 40px;
         line-height: 1.18;
@@ -55,7 +55,7 @@
 
 
 .mobile-menu__item {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 32px;
 
@@ -68,7 +68,7 @@
 }
 
 .connection-menu {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     padding-left: 40px;
     margin-bottom: 64px;
     }
@@ -76,7 +76,7 @@
 }
 
 .connection-menu__item {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 32px;
 
@@ -87,7 +87,7 @@
 }
 
 .connection-menu__tel {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         font-weight: 500;
         font-size: 34px;
         line-height: 1.18;
@@ -96,7 +96,7 @@
 }
 
 .connection-menu__mail {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         font-weight: 500;
         font-size: 24px;
         line-height: 1.17x;
@@ -106,7 +106,7 @@
 }
 
 .social-menu {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         padding-left: 40px;
         padding-bottom: 48px;
@@ -114,7 +114,7 @@
 }
 
 .social-menu__item {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
         padding-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -124,7 +124,7 @@
 }
 
 .social-menu__link {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         color: $accent-color;
        
     }

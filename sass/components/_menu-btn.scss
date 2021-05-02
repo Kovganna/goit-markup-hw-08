@@ -1,5 +1,5 @@
 .menu__button {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         margin: 0;
         padding: 0;
         position: absolute;
@@ -18,7 +18,7 @@
 }
 
 .menu__btn {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         background-color: $primary-white-color;
         border: none;
         transition-duration: 250ms;
@@ -34,7 +34,7 @@
 }
 
 .icon-close {
-    @media screen and (min-width: 480px) and (max-width: 767px)  {
+    @media screen and (max-width: 767px)  {
       display: none;  
     }
 }
