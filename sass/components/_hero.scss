@@ -39,6 +39,15 @@
     background-position: center;
     background-size: cover;
     background-color: $bg-hero-second;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+
+    @media screen and (max-width: 479px) {
+      background-size: 320px 320px;
+    }
 
     @media screen and (max-width: 767px) {
       background-size: 480px 400px;
