@@ -665,6 +665,14 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 479px) {
+  .decision {
+    padding-bottom: 118px;
+    padding-top: 118px;
+    min-width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .decision {
     padding-bottom: 118px;
@@ -712,6 +720,14 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .hero-foto__titel {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1636,15 +1652,16 @@ footer {
 
 @media screen and (min-width: 320px) {
   .subscription-form__email-type {
-    width: 290px;
+    margin: 0;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscription-form__email-type {
+    margin: 0;
     width: 450px;
-    margin-bottom: 20px;
   }
 }
 

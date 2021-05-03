@@ -74,14 +74,15 @@
     color: rgba(255, 255, 255, 0.6);
 
     @media screen and (min-width: 320px) {
-      width: 290px;
+      margin: 0;
+      width: 100%;
       margin-bottom: 20px;
-     }
-
-    @media screen and (max-width: 1199px) {
-     width: 450px;
-     margin-bottom: 20px;
     }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      margin: 0;
+     width: 450px;
+    } 
 
     @media screen and (min-width: 1200px) {
       width: 358px;
