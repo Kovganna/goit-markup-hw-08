@@ -11,6 +11,7 @@
         
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        z-index: 104;
 
         &.is-open {
           top: 0%;

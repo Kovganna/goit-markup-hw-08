@@ -17,6 +17,12 @@
     }
  }
 
+ .portfolio-list__portfolio-button:nth-last-child(-n+3) {
+  @media screen and (max-width: 480px) {
+     margin-top: 15px;
+   }
+ }
+
  .portfolio-list__portfolio-button:nth-last-child(-n+2) {
    @media screen and (max-width: 767px) {
       margin-top: 15px;
