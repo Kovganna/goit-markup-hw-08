@@ -41,7 +41,7 @@
 }
 
 .grid__img {
-  @media screen and (min-width: 1200px) {
+  
     border: 1px solid $portfolio-border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,7 +56,7 @@
     &:hover .grid__overlay {
       transform: translateY(0%);
     }
-  }
+  
   }
  
 }

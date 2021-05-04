@@ -9,7 +9,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        z-index: 105;
+        z-index: 106;
     }
 
     @media screen and (min-width: 768px) {
@@ -19,7 +19,7 @@
 
 .menu__btn {
     @media screen and (max-width: 767px) {
-        background-color: $primary-white-color;
+        background-color: rgba($color: #fff, $alpha: 0.02);
         border: none;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
