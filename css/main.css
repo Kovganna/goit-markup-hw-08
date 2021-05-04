@@ -1669,7 +1669,6 @@ footer {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  margin-right: 12px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1696,6 +1695,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .subscription-form__email-type {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
