@@ -19,6 +19,7 @@
 
 .menu__btn {
     @media screen and (max-width: 767px) {
+        
         background-color: rgba($color: #fff, $alpha: 0.02);
         border: none;
         transition-duration: 250ms;
