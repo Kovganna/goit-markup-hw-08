@@ -1256,17 +1256,23 @@ img {
   padding-top: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .clients {
+    padding-top: 60px;
+  }
+}
+
 .clients-titel {
   font-weight: 700;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1199px) {
   .clients-titel {
     font-size: 28px;
     line-height: 1.18;
+    margin-bottom: 30px;
   }
 }
 
@@ -1274,6 +1280,7 @@ img {
   .clients-titel {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
