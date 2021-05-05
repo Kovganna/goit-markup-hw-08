@@ -5,13 +5,13 @@
     @media screen and (max-width: 479px) {
       padding-bottom: 118px;
       padding-top: 118px;
-      min-width: 100%;
+      max-width: 479px;
     } 
 
     @media screen and (max-width: 767px) {
       padding-bottom: 118px;
       padding-top: 118px;
-      min-width: 480px;
+      max-width: 767px;
     }  
 
     @media screen and (min-width: 768px) {
@@ -117,14 +117,14 @@
     @media screen and (max-width: 479px) {
       font-size: 26px;
       line-height: 1.62;
-      max-width: 100%;
+      max-width: 360px;
     }
 
 
     @media screen and (max-width: 767px) {
       font-size: 26px;
       line-height: 1.62;
-      max-width: 480px;
+      max-width: 360px;
     }
 
     @media screen and (min-width: 768px) {

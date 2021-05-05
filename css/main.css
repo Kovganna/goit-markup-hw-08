@@ -53,7 +53,9 @@ img {
 
 @media screen and (max-width: 479px) {
   .container {
-    width: 320px;
+    max-width: 479px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -672,7 +674,7 @@ img {
   .decision {
     padding-bottom: 118px;
     padding-top: 118px;
-    min-width: 100%;
+    max-width: 479px;
   }
 }
 
@@ -680,7 +682,7 @@ img {
   .decision {
     padding-bottom: 118px;
     padding-top: 118px;
-    min-width: 480px;
+    max-width: 767px;
   }
 }
 
@@ -768,7 +770,7 @@ img {
   .hero-foto__titel {
     font-size: 26px;
     line-height: 1.62;
-    max-width: 100%;
+    max-width: 360px;
   }
 }
 
@@ -776,7 +778,7 @@ img {
   .hero-foto__titel {
     font-size: 26px;
     line-height: 1.62;
-    max-width: 480px;
+    max-width: 360px;
   }
 }
 
