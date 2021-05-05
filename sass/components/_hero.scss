@@ -43,7 +43,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../img/descktop/hero-d.jpg);
+      url(../img/mobile/hero-m@2x.jpg);
       background-size: 480px 400px;
     
 
@@ -87,7 +87,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../img/tablet/hero-t@2x.jpg);
-      background-size: cover;
+      background-size:  768px 400px;;
     }
 
     @media screen and (min-width: 1200px) {
