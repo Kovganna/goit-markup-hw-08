@@ -31,8 +31,6 @@
   // }
   
   .site-nav__link {
-
-    @media screen and (min-width: 1200px) {
       padding: 32px 0;
       color: inherit;
       font-weight: 500;
@@ -41,7 +39,7 @@
       color: $title-text-color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
   }
     
   .site-nav__item {
