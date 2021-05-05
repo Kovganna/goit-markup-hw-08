@@ -8,7 +8,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(0, 0, 0, 0.1);
-    // z-index: 105; 
+    z-index: 106; 
   }
 
   @media screen and (min-width: 768px) {
@@ -50,9 +50,10 @@
   
   .modal {
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
     
       /* padding: 15px; */
     background-color: $primary-white-color;
@@ -88,9 +89,9 @@
     color: $title-text-color;
     margin-right: 0;
     margin-bottom: 12px;
-    padding-top: 40px;
-    padding-left: 55px;
-    padding-right: 55px;
+    // padding-top: 40px;
+    // padding-left: 55px;
+    // padding-right: 55px;
     // line-height: 1.115;
 
     @media screen and (max-width: 767px) {
@@ -118,27 +119,21 @@
     @media screen and (max-width: 767px) {
       width: 100%;
       height: 100%;
-      padding-left: 40px;
-      padding-bottom: 40px;
-      padding-right: 40px;
+      
       /* outline: 1px solid purple; */
       }
 
     @media screen and (min-width: 768px) {
       width: 100%;
       height: 100%;
-      padding-left: 40px;
-      padding-bottom: 40px;
-      padding-right: 40px;
+      
       /* outline: 1px solid purple; */
       }
 
     @media screen and (min-width: 1200px) {
     width: 100%;
     height: 100%;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
+    
     /* outline: 1px solid purple; */
     }
   }
