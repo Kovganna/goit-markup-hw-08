@@ -1519,7 +1519,7 @@ footer {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container_block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1533,6 +1533,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 0;
   }
 }
 
@@ -1774,7 +1775,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .subscription-form__email-type {
     margin: 0;
     width: 100%;

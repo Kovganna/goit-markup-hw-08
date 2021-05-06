@@ -115,14 +115,14 @@ footer {
   
   .container_block {
     
-    @media screen and (max-width: 768px)  {
+    @media screen and (min-width: 768px)  {
       display: flex;
       margin-bottom: 60px;
     }
     
     @media screen and (min-width: 1200px)  {
         display: flex;
-        
+        margin-bottom: 0;
     }
       
   }

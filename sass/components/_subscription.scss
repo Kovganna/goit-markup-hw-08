@@ -73,7 +73,7 @@
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
 
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
       margin: 0;
       width: 100%;
       margin-bottom: 20px;
