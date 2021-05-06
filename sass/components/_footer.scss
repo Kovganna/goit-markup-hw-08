@@ -1,5 +1,7 @@
 footer {
     background-color: $hero-bg-color;
+
+    
   }
   
   .footer-link__link-web {
@@ -52,7 +54,7 @@ footer {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-left: 61px;
       margin-right: 165px;
-      
+           
     }
 
     @media screen and (min-width: 1200px) {
@@ -113,12 +115,20 @@ footer {
   
   .container_block {
     
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px)  {
       display: flex;
       margin-bottom: 60px;
-      }
-   
     }
+    
+    @media screen and (min-width: 1200px)  {
+        display: flex;
+        
+    }
+      
+  }
+
+
+
     
     .footer-block .container {
       padding-bottom: 60px;

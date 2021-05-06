@@ -1369,6 +1369,7 @@ img {
 @media screen and (min-width: 768px) {
   .clients-list__thumb {
     height: 92px;
+    width: 226px;
   }
 }
 
@@ -1518,12 +1519,20 @@ footer {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container_block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
