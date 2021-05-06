@@ -1,105 +1,130 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .site-nav {
 
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-            
-      & .current {
-        color: $accent-color;
-        position: relative;
+  @media screen and (min-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+          
+    & .current {
+      color: $accent-color;
+      position: relative;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+    & .current {
+      color: $accent-color;
+      position: relative;
+    }
+  }
+}
+
+
+
+
+.site-nav__link {
+    padding: 32px 0;
+    color: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    -webkit-transition-duration: 250ms;
+         -o-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+  
+.site-nav__item {
+
+  @media screen and (min-width: 768px) {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+      & + .site-nav__item {
+        margin-left: 50px;
       }
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: center;
       
-      & .current {
+      & a:hover,
+      & a:focus{
         color: $accent-color;
-        position: relative;
+        fill: currentColor;
       }
-    }
   }
   
-  
-  // .site-nav__link {
-  //   padding-left: 0;
-  // }
-  
-  .site-nav__link {
-      padding: 32px 0;
-      color: inherit;
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: $title-text-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+  @media screen and (min-width: 1200px) {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+      & + .site-nav__item {
+        margin-left: 50px;
+      }
+      
+      & a:hover,
+      & a:focus{
+        color: $accent-color;
+        fill: currentColor;
+      }
   }
-    
-  .site-nav__item {
 
-    @media screen and (min-width: 768px) {
-      align-items: center;
-      display: inline-flex;
-  
-        & + .site-nav__item {
-          margin-left: 50px;
-        }
-        
-        & a:hover,
-        & a:focus{
-          color: $accent-color;
-          fill: currentColor;
-        }
-    }
-    
-    @media screen and (min-width: 1200px) {
-      align-items: center;
-      display: inline-flex;
-  
-        & + .site-nav__item {
-          margin-left: 50px;
-        }
-        
-        & a:hover,
-        & a:focus{
-          color: $accent-color;
-          fill: currentColor;
-        }
-    }
+}
 
+
+
+.decor::after {
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    content: "";
+    width: 47px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: currentColor;
+    position: absolute;
+    top: 76px;
   }
-  
- 
-  
-  .decor::after {
 
-    @media screen and (min-width: 768px) {
-      display: block;
-      content: "";
-      width: 47px;
-      height: 4px;
-      border-radius: 2px;
-      background-color: currentColor;
-      position: absolute;
-      top: 76px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: block;
-      content: "";
-      width: 48px;
-      height: 4px;
-      border-radius: 2px;
-      background-color: currentColor;
-      position: absolute;
-      top: 77px;
-    }
-  
+  @media screen and (min-width: 1200px) {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: currentColor;
+    position: absolute;
+    top: 77px;
   }
+
+}

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .head {
   border-bottom: 1px solid $header-border-color;
   background-color: $primary-white-color;
@@ -6,8 +13,12 @@
 }
 
 .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   
   @media screen and (max-width: 767px) {
     height: 60px;
@@ -17,6 +28,8 @@
 }
 
 .main-nav__nav {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
    
  }

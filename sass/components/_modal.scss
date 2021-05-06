@@ -1,12 +1,39 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .backdrop {
+
+  @media screen and (max-width: 350px) {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    -webkit-transition-duration: 250ms;
+         -o-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 106; 
+  }
   @media screen and (max-width: 767px) {
     position: fixed;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+         -o-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(0, 0, 0, 0.1);
     z-index: 106; 
   }
@@ -17,8 +44,12 @@
     left: 0%;
     width: 100%;
     height: 100%;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+         -o-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(0, 0, 0, 0.1);
     /* z-index: 1; */
   }
@@ -29,8 +60,12 @@
       left: 0%;
       width: 100%;
       height: 100%;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-transition-duration: 250ms;
+           -o-transition-duration: 250ms;
+              transition-duration: 250ms;
+      -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+           -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       background-color: rgba(0, 0, 0, 0.1);
       /* z-index: 1; */
     }
@@ -52,7 +87,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding: 40px;
     
       /* padding: 15px; */
@@ -61,8 +98,8 @@
     border: 1px solid rgba(252, 247, 247, 0.802);
 
     @media screen and (max-width: 479px) {
-      max-width: 300px;
-      min-height: 609px;
+      max-width: 100vw;
+      min-height: 200vh;
     }
 
     @media screen and (max-width: 767px) {
@@ -83,16 +120,13 @@
   
   .modal-titel {
     font-weight: 700;
-    // font-size: 20px;
+    
     
     text-align: center;
     color: $title-text-color;
     margin-right: 0;
     margin-bottom: 12px;
-    // padding-top: 40px;
-    // padding-left: 55px;
-    // padding-right: 55px;
-    // line-height: 1.115;
+    
 
     @media screen and (max-width: 767px) {
       font-size: 20px;
@@ -115,6 +149,11 @@
   /* modal */
   
   .modal-form {
+
+    @media screen and (max-width: 320px) {
+      width: 100%;
+      height: 100%;
+    }  
 
     @media screen and (max-width: 767px) {
       width: 100%;
@@ -148,8 +187,13 @@
       border: none;
     
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       margin-bottom: 10px;
       cursor: pointer;
       }
@@ -163,8 +207,13 @@
       border: none;
     
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       margin-bottom: 10px;
       cursor: pointer;
       }
@@ -177,8 +226,13 @@
     border: none;
   
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 10px;
     cursor: pointer;
     }
@@ -193,7 +247,7 @@
     border-radius: 4px;
 
     @media screen and (max-width: 479px) {
-      width: 290px;
+      width: 200px;
     }
     
     @media screen and (min-width: 480px) {
@@ -207,6 +261,38 @@
     @media screen and (min-width: 1200px) {
     width: 448px;
     }
+  }
+  
+  .modal-form textarea::-webkit-input-placeholder {
+    letter-spacing: 0.01em;
+    /* padding-top: 12px;
+    padding-left: 16px; */
+    color: rgba(117, 117, 117, 0.5);
+    
+  }
+  
+  .modal-form textarea::-moz-placeholder {
+    letter-spacing: 0.01em;
+    /* padding-top: 12px;
+    padding-left: 16px; */
+    color: rgba(117, 117, 117, 0.5);
+    
+  }
+  
+  .modal-form textarea:-ms-input-placeholder {
+    letter-spacing: 0.01em;
+    /* padding-top: 12px;
+    padding-left: 16px; */
+    color: rgba(117, 117, 117, 0.5);
+    
+  }
+  
+  .modal-form textarea::-ms-input-placeholder {
+    letter-spacing: 0.01em;
+    /* padding-top: 12px;
+    padding-left: 16px; */
+    color: rgba(117, 117, 117, 0.5);
+    
   }
   
   .modal-form textarea::placeholder {
@@ -224,7 +310,7 @@
     padding-left: 16px;
 
     @media screen and (max-width: 479px) {
-      width: 50vw;
+      width: 300px;
       height: 120px;
     }
 
@@ -249,6 +335,8 @@
   }
   
   .modal-form__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 4px;
   }
@@ -256,8 +344,12 @@
   .modal-form__input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+         -o-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
   }
   
@@ -268,6 +360,8 @@
     /* transform: translateY(-30%); */
     width: 18px;
     height: 18px;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     
@@ -281,7 +375,9 @@
 
     &:focus + .modal-form__icon,
     &:not(:placeholder-shown) + .modal-form__icon {
-      appearance: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
   }
   }
     

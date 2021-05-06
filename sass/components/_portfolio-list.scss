@@ -1,83 +1,105 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 
 .portfolio-list {
-    margin: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+
+  @media screen and (max-width: 767px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-  
-
-    @media screen and (max-width: 767px) {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 36px;
-      
-      }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 36px;
     
-    @media screen and (min-width: 768px) {
-      justify-content: center;
-      margin-bottom: 30px;
     }
-
-    @media screen and (min-width: 1200px) {
-      justify-content: center;
-      margin-bottom: 50px;
-    }
- }
-
- .portfolio-list__portfolio-button:nth-last-child(-n+3) {
-  @media screen and (max-width: 320px) {
-     margin-top: 15px;
-   }
- }
-
- .portfolio-list__portfolio-button:nth-last-child(-n+2) {
-   @media screen and (max-width: 767px) {
-      margin-top: 15px;
-    }
+  
+  @media screen and (min-width: 768px) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio-list__portfolio-button:nth-last-child(-n+3) {
+@media screen and (max-width: 320px) {
+   margin-top: 15px;
+ }
+}
+
+.portfolio-list__portfolio-button:nth-last-child(-n+2) {
+ @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+}
 
 .portfolio-list__portfolio-button:not(:last-child) {
-   padding-right: 8px;
-  }
+ padding-right: 8px;
+}
 
 .secondary {
-  padding: 6px 22px;
+padding: 6px 22px;
 }
 
 .portfolio-list__button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  color: $title-text-color;
-  background-color: $secondary-bg-color;
-  cursor: pointer;
-  border-style: none;
-  border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+color: $title-text-color;
+background-color: $secondary-bg-color;
+cursor: pointer;
+border-style: none;
+border-radius: 4px;
+-webkit-transition-duration: 250ms;
+     -o-transition-duration: 250ms;
+        transition-duration: 250ms;
+-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:focus,
-  &:hover {
-    background-color: $accent-color;
-    color: $primary-white-color;
+&:focus,
+&:hover {
+  background-color: $accent-color;
+  color: $primary-white-color;
 
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 }
 
 .portfolio-gallery__text {
-  font-size: 16px;
-  line-height: 1.88;
+font-size: 16px;
+line-height: 1.88;
 }
 .portfolio {
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+@media screen and (max-width: 767px) {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+}

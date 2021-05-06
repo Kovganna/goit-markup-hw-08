@@ -1,42 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .social-icons__item {
-    display: inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-  
+  &:not(:last-child) {
+    margin-right: 10px;
   }
 
-  
-  .social-icons .social-icons__icon {
-    width: 20px;
-    height: 20px;
-    fill: $icon-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .social-icons__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: $primary-white-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      border: 50%;
-    }
-    
-    &:hover .social-icons__icon,
-    &:focus .social-icons__icon {
-      fill: $primary-white-color;
-    }
+
+.social-icons .social-icons__icon {
+  width: 20px;
+  height: 20px;
+  fill: $icon-color;
+  -webkit-transition-duration: 250ms;
+       -o-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: $primary-white-color;
+  -webkit-transition-duration: 250ms;
+       -o-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border: 50%;
   }
-    
- 
+  
+  &:hover .social-icons__icon,
+  &:focus .social-icons__icon {
+    fill: $primary-white-color;
+  }
+}
+  

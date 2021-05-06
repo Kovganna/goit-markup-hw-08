@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .menu__button {
     @media screen and (max-width: 767px) {
         margin: 0;
@@ -6,9 +13,15 @@
         right: 15px;
         top: 10px;
         bottom: 10px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         z-index: 106;
     }
 
@@ -22,14 +35,20 @@
         
         background-color: rgba($color: #fff, $alpha: 0.02);
         border: none;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-transition-duration: 250ms;
+             -o-transition-duration: 250ms;
+                transition-duration: 250ms;
+        -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+             -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         fill: $title-text-color;
 
         &:focus,
         &:hover {
             fill: $accent-color;
-            transition-duration: 250ms;
+            -webkit-transition-duration: 250ms;
+                 -o-transition-duration: 250ms;
+                    transition-duration: 250ms;
         }
     }
 }
@@ -48,4 +67,3 @@
         display: none;
     }
 }
-

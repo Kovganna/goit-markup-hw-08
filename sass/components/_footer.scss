@@ -1,201 +1,218 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 footer {
-    background-color: $hero-bg-color;
+  background-color: $hero-bg-color;
 
-    
-  }
   
-  .footer-link__link-web {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    color: $accent-color;
+}
 
-    @media screen and (max-width: 767px) {
-      font-size: 24px;
-      line-height: 1.16;
-    }
+.footer-link__link-web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: $accent-color;
 
-    @media screen and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 1.19;
-    }
-
-
-    @media screen and (min-width: 1200px) {
-      font-size: 26px;
-      line-height: 1.19;
-    }
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
   }
 
-  .footer-link__studio-link {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    color: $primary-white-color;
-
-    @media screen and (max-width: 1199px) {
-      font-size: 24px;
-      line-height: 1.16;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 26px;
-      line-height: 1.19;
-    }
-  }
-  
-  .container-adress {
-    margin: 0;
-    padding: 0;
-
-    @media screen and (max-width: 767px) {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding-left: 61px;
-      margin-right: 165px;
-           
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding-left: 0;
-      margin-right: 70px;
-    }
-    
-  }
-  
-  .footer-location {
-    display: block;
-    font-style: normal;
-    color: $primary-white-color;
-    font-weight: 400;
-    margin-bottom: 9px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  /* footer-list */
-  
-  .footer-list {
-
-    @media screen and (min-width: 768px) {
-      padding-left: 39px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding-left: 0;
-    }
-    
-
-    & a:hover,
-    & a:focus {
-      color: $accent-color;
-      fill: currentColor;
-  } 
-  }
-
-  
-  
-  .footer-list__mail {
-    @media screen and (min-width: 1200px) {
-      width: 231px;
-      margin-bottom: 9px;
-    }
-    
-  }
-  
-  .footer-list__mail,
-  .footer-list__tel {
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-    display: list-item;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .container_block {
-    
-    @media screen and (min-width: 768px)  {
-      display: flex;
-      margin-bottom: 60px;
-    }
-    
-    @media screen and (min-width: 1200px)  {
-        display: flex;
-        margin-bottom: 0;
-    }
-      
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 
 
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
-    
-    .footer-block .container {
-      padding-bottom: 60px;
-      padding-top: 60px;
-    
-      @media screen and (min-width: 1200px) {
-        display: flex;
+.footer-link__studio-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: $primary-white-color;
 
-        }
-    }
-  
-  .footer-tale {
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 
-    @media screen and (max-width: 767px) {
-      text-align: center;
-      margin-bottom: 60px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
-    @media screen and (min-width: 768px) {
-      display: inline-block;
-    //   padding-top: 5px;
-    //   padding-right: 74px;
-    //   align-items: center;
-    //   margin-bottom: 60px;
-    }
+.container-adress {
+  margin: 0;
+  padding: 0;
 
-    @media screen and (min-width: 1200px) {
-      padding-top: 12px;
-      margin-right: 93px;
-    }
-    
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 61px;
+    margin-right: 165px;
+         
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    margin-right: 70px;
   }
   
-  .footer-link {
-    color: inherit;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $title-text-color;
-    margin-bottom: 20px;
-    display: inline-block;
+}
 
-    @media screen and (max-width: 767px) {
-      line-height: 1.71;
-    }
+.footer-location {
+  display: block;
+  font-style: normal;
+  color: $primary-white-color;
+  font-weight: 400;
+  margin-bottom: 9px;
+  -webkit-transition-duration: 250ms;
+       -o-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    @media screen and (min-width: 768px) {
-      line-height: 1.71;
-      padding-left: 39px;
-    }
+/* footer-list */
 
-    @media screen and (min-width: 1200px) {
-      padding-left: 0;
-      line-height: 1.14;
-    }
+.footer-list {
+
+  @media screen and (min-width: 768px) {
+    padding-left: 39px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
   }
   
-  
-  
-  .footer-adress :hover,
-  .footer-adress :focus,
-  .footer-link a:hover,
-  .footer-link a:focus,
-  .footer-list a:hover,
-  .footer-list a:focus {
+
+  & a:hover,
+  & a:focus {
     color: $accent-color;
     fill: currentColor;
-  } 
+} 
+}
+
+
+
+.footer-list__mail {
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-bottom: 9px;
+  }
+  
+}
+
+.footer-list__mail,
+.footer-list__tel {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  display: list-item;
+  -webkit-transition-duration: 250ms;
+       -o-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container_block {
+  
+  @media screen and (min-width: 768px)  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px;
+  }
+  
+  @media screen and (min-width: 1200px)  {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 0;
+  }
+    
+}
+
+
 
   
+  .footer-block .container {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  
+    @media screen and (min-width: 1200px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      }
+  }
+
+.footer-tale {
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+    margin-right: 93px;
+  }
+  
+}
+
+.footer-link {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+  margin-bottom: 20px;
+  display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    line-height: 1.71;
+  }
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.71;
+    padding-left: 39px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    line-height: 1.14;
+  }
+}
+
+
+
+.footer-adress :hover,
+.footer-adress :focus,
+.footer-link a:hover,
+.footer-link a:focus,
+.footer-list a:hover,
+.footer-list a:focus {
+  color: $accent-color;
+  fill: currentColor;
+} 
+

@@ -1,15 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .grid {
   margin: 0;
   padding: 0;
 
   @media screen and (min-width: 480px) {
     display: block;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   } 
 
   @media screen and (min-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     margin-top: -30px;
     margin-right: -30px;
@@ -26,16 +39,24 @@
       }
 
       @media screen and (min-width: 768px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        flex-basis: calc(100% / 2 - 30px);
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-preferred-size: calc(100% / 2 - 30px);
+            flex-basis: calc(100% / 2 - 30px);
         
       }
 
       @media screen and (min-width: 1200px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        flex-basis: calc(100%/3 - 30px);
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-preferred-size: calc(100%/3 - 30px);
+            flex-basis: calc(100%/3 - 30px);
       }
     }
 }
@@ -43,25 +64,28 @@
 .grid__img {
   
     border: 1px solid $portfolio-border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+         -o-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
     &:hover,
     &:focus {
     cursor: pointer;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     /* outline: 1px solid purple; */
 
     &:hover .grid__overlay {
-      transform: translateY(0%);
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%);
     }
 
-    // @media screen and (max-width: 767px) {
-    //   transition-duration: 450ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    // }
-  
   }
  
 }
@@ -89,10 +113,20 @@
 
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        -ms-transform: translateY(100%);
+
+            transform: translateY(100%);
+
+    -webkit-transition-duration: 250ms;
+
+         -o-transition-duration: 250ms;
+
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   } 
 
 
