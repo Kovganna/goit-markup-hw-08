@@ -7,6 +7,35 @@
 
 .mobile-menu {
 
+    
+    @media screen and (max-width: 320px) {
+        position: fixed;
+        left: 0;
+        top: 100%;        
+        width: 100vw;
+        height: 100vh;
+        padding: 28px 63px 28px 20px;
+                
+        background-color: $primary-white-color;
+        -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        
+        -webkit-transition-duration: 250ms;
+        
+             -o-transition-duration: 250ms;
+        
+                transition-duration: 250ms;
+        -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+             -o-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        z-index: 105;
+
+        &.is-open {
+          top: 0%;
+
+        }
+    }  
+
     @media screen and (max-width: 479px) {
         position: fixed;
         left: 0;
@@ -82,6 +111,17 @@
 }
 
 .mobile-menu__link {
+
+    @media screen and (max-width: 320px) {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.18;
+        
+        letter-spacing: 0.02em;
+        color: $title-text-color;
+
+    }
+
     @media screen and (max-width: 767px) {
         font-weight: 500;
         font-size: 40px;
@@ -127,10 +167,12 @@
 }
 
 .connection-menu__tel {
+
+    
     @media screen and (max-width: 479px) {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.18;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.17;
         color: $accent-color;
     }
 
@@ -147,14 +189,14 @@
     @media screen and (max-width: 479px) {
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.17x;
+        line-height: 1.17;
         color: $primary-text-color;
       
     }
     @media screen and (max-width: 767px) {
         font-weight: 500;
         font-size: 24px;
-        line-height: 1.17x;
+        line-height: 1.17;
         color: $primary-text-color;
       
     }
@@ -183,9 +225,9 @@
 
 .social-menu__link {
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 320px) {
         font-weight: 500;
-         font-size: 18px;
+         font-size: 10px;
         line-height: 1.22;
         color: $accent-color;
        
