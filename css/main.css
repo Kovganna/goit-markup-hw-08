@@ -932,6 +932,38 @@ img {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
+    -webkit-animation: animate1 3000ms infinite 1000ms;
+            animation: animate1 3000ms infinite 1000ms;
+  }
+  @-webkit-keyframes animate1 {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      color: aqua;
+    }
+    50% {
+      -webkit-transform: scale(0.75);
+              transform: scale(0.75);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes animate1 {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      color: aqua;
+    }
+    50% {
+      -webkit-transform: scale(0.75);
+              transform: scale(0.75);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
 }
 
@@ -1039,24 +1071,160 @@ img {
   background-image: url(../img/sputnic.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: animate2 3000ms infinite 1000ms;
+          animation: animate2 3000ms infinite 1000ms;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-100px, -150px);
+            transform: translate(-100px, -150px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-100px, -150px);
+            transform: translate(-100px, -150px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .time {
   background-image: url(../img/time.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: animate3 3000ms infinite 1000ms;
+          animation: animate3 3000ms infinite 1000ms;
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-50px, -100px);
+            transform: translate(-50px, -100px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-50px, -100px);
+            transform: translate(-50px, -100px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .computer {
   background-image: url(../img/computer.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: animate4 3000ms infinite 1000ms;
+          animation: animate4 3000ms infinite 1000ms;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .astronaut {
   background-image: url(../img/astronaut.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: animate5 3000ms infinite 1000ms;
+          animation: animate5 3000ms infinite 1000ms;
+}
+
+@-webkit-keyframes animate5 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(50px, 100px);
+            transform: translate(50px, 100px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animate5 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(50px, 100px);
+            transform: translate(50px, 100px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 .quality__title {
@@ -2664,7 +2832,7 @@ form button {
 }
 
 @media screen and (max-width: 320px) {
-  .portfolio-list__portfolio-button:nth-last-child(-n+3) {
+  .portfolio-list__portfolio-button:nth-last-child(-n+2) {
     margin-top: 15px;
   }
 }

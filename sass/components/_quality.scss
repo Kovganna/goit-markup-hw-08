@@ -32,6 +32,7 @@
   padding: 0;
   margin: 0;
 
+
   @media screen and (min-width: 768px){
   
     display: -webkit-box;
@@ -70,7 +71,11 @@
         -ms-flex-preferred-size: calc(100% / 4 - 30px);
             flex-basis: calc(100% / 4 - 30px);
         margin-right: 30px;
+
+        
       }
+
+      
     }
 
   
@@ -95,30 +100,97 @@
 
   background-color: $icon-bg-color;
   border-radius: 4px;
+
+  
 }
  
 .sputnic {
   background-image: url(../img/sputnic.png);
   background-repeat: no-repeat;
   background-position: center;
+  animation: animate2 3000ms infinite 1000ms;
+  @keyframes animate2 {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(-100px, -150px);
+      background-color: cornflowerblue;
+    }
+  
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 }
+       
 .time {
   background-image: url(../img/time.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  animation: animate3 3000ms infinite 1000ms;
+  @keyframes animate3 {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(-50px, -100px);
+      background-color: cornflowerblue;
+    }
+  
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 }
+
 
 .computer {
   background-image: url(../img/computer.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  animation: animate4 3000ms infinite 1000ms;
+  @keyframes animate4 {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(0px, 0px);
+      background-color: cornflowerblue;
+    }
+  
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 }
 
 .astronaut {
   background-image: url(../img/astronaut.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  animation: animate5 3000ms infinite 1000ms;
+  @keyframes animate5 {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(50px, 100px);
+      background-color: cornflowerblue;
+    }
+  
+    100% {
+      transform: translate(0, 0);
+    }
   }
+}
 
 .quality__title {
   font-weight: 700;

@@ -250,6 +250,24 @@ screen and  (min-resolution: 2dppx) {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
+    animation: animate1 3000ms infinite 1000ms;
+
+    @keyframes animate1 {
+      0% {
+        transform: scale(0);
+        color: aqua;
+      }
+    
+      50% {
+        transform: scale(0.75);
+        
+      }
+    
+      100% {
+        transform: scale(1);
+        
+      }
+    }
   }
 
 }
